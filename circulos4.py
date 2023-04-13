@@ -1,8 +1,10 @@
 from manim import *
 
-class Centro(Scene):
+class Circulos(Scene):
     def construct(self):
-        s=Circle(radius=2.0,color=RED)
-        t=Circle(radius=1.0,color=BLUE)
-        self.add(s,t)
+        a=Circle().move_to(UP)
+        b=Circle().move_to(RIGHT)
+        c=Circle().move_to(DOWN)
+        d=Circle().move_to(LEFT)
+        self.add(a,b,c,d)
         
